@@ -1,3 +1,7 @@
+/**
+ * Multi codec streaming with Bitmovin player.
+ */
+
 var CODEC = {
     H264: 'H264',
     H265: 'H265',
