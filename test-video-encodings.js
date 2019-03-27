@@ -66,10 +66,10 @@ function loadBitmovinPlayerWithConfig () {
         // Bitmovin player config
         config = {
             key: 'a57fbebb-c05b-489a-b862-d926b43b45bc',
-            analytics: {
-                key: 'f8ccc531-21a7-49d9-b687-c6238c7bb9ad',
-                videoId: 'test-video-encodings'
-            },
+            //analytics: {
+            //    key: 'f8ccc531-21a7-49d9-b687-c6238c7bb9ad',
+            //   videoId: 'test-video-encodings'
+            //},
             playback: {
                 muted: true
             },
