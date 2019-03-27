@@ -18,6 +18,7 @@ var BROWSER = {
     EDGE_VERSION: 11
 };
 
+// Make player instance global
 var player = null;
 
 // Updates UI elements after information have been retrieved.
@@ -97,6 +98,7 @@ function loadBitmovinPlayerWithConfig () {
         selectedCodec = CODEC.H265;
         media.dash = 'https://bitmovin-a.akamaihd.net/content/multi-codec/hevc/stream.mpd';
     } else if (browser === BROWSER.SAFARI) {
+        // Use HLS
         if (version >= BROWSER.SAFARI_VERSION) {
             selectedCodec = CODEC.H265;
             media.hls = 'https://bitmovin-a.akamaihd.net/webpages/demos/content/multi-codec/hevc/stream_fmp4.m3u8';
